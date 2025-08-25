@@ -1,0 +1,17 @@
+
+
+# ClientPasswordAuthType
+
+## Enum
+
+
+* `MYSQL_NATIVE_PASSWORD` (value: `"MYSQL_NATIVE_PASSWORD"`)
+
+* `POSTGRES_SCRAM_SHA_256` (value: `"POSTGRES_SCRAM_SHA_256"`)
+
+* `POSTGRES_MD5` (value: `"POSTGRES_MD5"`)
+
+* `SQL_SERVER_AUTHENTICATION` (value: `"SQL_SERVER_AUTHENTICATION"`)
+
+
+

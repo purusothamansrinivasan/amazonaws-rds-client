@@ -1,0 +1,19 @@
+
+
+# TargetHealthReason
+
+## Enum
+
+
+* `UNREACHABLE` (value: `"UNREACHABLE"`)
+
+* `CONNECTION_FAILED` (value: `"CONNECTION_FAILED"`)
+
+* `AUTH_FAILURE` (value: `"AUTH_FAILURE"`)
+
+* `PENDING_PROXY_CAPACITY` (value: `"PENDING_PROXY_CAPACITY"`)
+
+* `INVALID_REPLICATION_STATE` (value: `"INVALID_REPLICATION_STATE"`)
+
+
+

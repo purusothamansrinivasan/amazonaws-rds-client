@@ -1,0 +1,15 @@
+
+
+# TargetType
+
+## Enum
+
+
+* `RDS_INSTANCE` (value: `"RDS_INSTANCE"`)
+
+* `RDS_SERVERLESS_ENDPOINT` (value: `"RDS_SERVERLESS_ENDPOINT"`)
+
+* `TRACKED_CLUSTER` (value: `"TRACKED_CLUSTER"`)
+
+
+

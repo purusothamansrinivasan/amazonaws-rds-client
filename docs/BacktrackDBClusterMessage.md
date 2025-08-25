@@ -1,0 +1,17 @@
+
+
+# BacktrackDBClusterMessage
+
+<p/>
+
+## Properties
+
+| Name | Type | Description | Notes |
+|------------ | ------------- | ------------- | -------------|
+|**dbClusterIdentifier** | **String** | &lt;p&gt;The DB cluster identifier of the DB cluster to be backtracked. This parameter is stored as a lowercase string.&lt;/p&gt; &lt;p&gt;Constraints:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt;Must contain from 1 to 63 alphanumeric characters or hyphens.&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;First character must be a letter.&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;Can&#39;t end with a hyphen or contain two consecutive hyphens.&lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Example: &lt;code&gt;my-cluster1&lt;/code&gt; &lt;/p&gt; |  |
+|**backtrackTo** | **OffsetDateTime** | &lt;p&gt;The timestamp of the time to backtrack the DB cluster to, specified in ISO 8601 format. For more information about ISO 8601, see the &lt;a href&#x3D;\&quot;http://en.wikipedia.org/wiki/ISO_8601\&quot;&gt;ISO8601 Wikipedia page.&lt;/a&gt; &lt;/p&gt; &lt;note&gt; &lt;p&gt;If the specified time isn&#39;t a consistent time for the DB cluster, Aurora automatically chooses the nearest possible consistent time for the DB cluster.&lt;/p&gt; &lt;/note&gt; &lt;p&gt;Constraints:&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;p&gt;Must contain a valid ISO 8601 timestamp.&lt;/p&gt; &lt;/li&gt; &lt;li&gt; &lt;p&gt;Can&#39;t contain a timestamp set in the future.&lt;/p&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Example: &lt;code&gt;2017-07-08T18:00Z&lt;/code&gt; &lt;/p&gt; |  |
+|**force** | **Boolean** | A value that indicates whether to force the DB cluster to backtrack when binary logging is enabled. Otherwise, an error occurs when binary logging is enabled. |  [optional] |
+|**useEarliestTimeOnPointInTimeUnavailable** | **Boolean** | A value that indicates whether to backtrack the DB cluster to the earliest possible backtrack time when &lt;i&gt;BacktrackTo&lt;/i&gt; is set to a timestamp earlier than the earliest backtrack time. When this parameter is disabled and &lt;i&gt;BacktrackTo&lt;/i&gt; is set to a timestamp earlier than the earliest backtrack time, an error occurs. |  [optional] |
+
+
+
